@@ -1,0 +1,14 @@
+{
+  "lock": false,
+  "tasks": {
+    "install": "spago install",
+    "build": "spago build --source-maps",
+    "build:watch": "deno task build --watch",
+    "start": "deno run -A --watch=static/,routes/ dev.ts"
+  },
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}

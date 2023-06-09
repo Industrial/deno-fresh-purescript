@@ -1,8 +1,0 @@
-{
-  "tasks": {
-    "build": "spago bundle-app --to dist/mod.js",
-    "build:watch": "deno task build --watch",
-    "start": "deno run -A dist/mod.js",
-    "start:watch": "deno run --watch -A dist/mod.js"
-  }
-}

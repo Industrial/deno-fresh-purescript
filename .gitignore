@@ -1,4 +1,7 @@
-/.direnv
-/.spago
-/dist
-/output
+/.direnv/
+/.env
+/.env.development.local
+/.env.local
+/.env.production.local
+/.env.test.local
+/.spago/
