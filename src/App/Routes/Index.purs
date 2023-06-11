@@ -1,6 +1,12 @@
 module App.Routes.Index where
 
-type IndexRouteProps = {}
+import Prelude
 
-indexRoute :: IndexRouteProps -> String
-indexRoute props = "YEABUDDY123"
+import App.Islands.Counter (counterComponent)
+import React.Basic.Hooks (Component, component)
+
+indexRoute :: Component Unit
+indexRoute = do
+  renderCounter <- counterComponent
+  component "IndexRoute" \_ -> Hooks.do
+    pure $ renderCounter 0
